@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message page</title>
+    <style>
+        body{
+            background-image: url(msg.jpg);
+            text-align: center;
+            background-image: 100%;
+        }
+        .body img{
+            height: 2000px;
+            width: 2000px;
+        }
+        #container{
+            color:aliceblue;
+            background-image: url(msg.jpg);
+            margin-top: 200px;
+            height: 300px;
+            width: 500px;
+            border-radius: 50%;
+
+        }
+        button{
+            height:25px;
+            width: 60px;
+            border-radius: 100%;
+            background-color:blue;
+        }
+        button:hover{
+            transform: scale(1.3);
+            background-color: rgb(96, 195, 237);
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <div id="container"><br><br><br>
+            <p>Pass The Message</p>
+            <br>
+            <label for="message-input">Enter a Message</label><br><br>
+            <label>✉️</label>
+    <input type="text" name="message-input" id="message-input">
+            <br><br>
+            <button id="click" onclick="getMessage()">Submit</button>
+            <button id="click" onclick="getMessage()">reset</button>
+            <p id="message-output" style="text-align: center; text-transform: uppercase;"></p>
+
+
+        </div>
+    </center>
+    <script src="msg.js"></script>
+    
+</body>
+</html>
